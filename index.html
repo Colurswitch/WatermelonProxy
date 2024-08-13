@@ -1,70 +1,68 @@
 <html>
-  <!-- Set css for the footer and theme. -->
-      <link rel="stylesheet" href = "/assets/css/default-theme.css">
-      <link rel="stylesheet" href = "/assets/css/style.css"> <!--Back up incase default doesnt work-->
-      <link rel="stylesheet" href = "/assets/css/footer.css">
-      <head>
-        <title>v3</title>
-        <meta name="description" content="With 260+ gαmes, it's quite tempting. Isn't it, saint? ">
-        <meta name="keywords" content="Hell, hell, d3ch, math, education, algebra">
-      <!--
+<!-- Set css for the footer and theme. -->
+<link rel="stylesheet" href="/assets/css/default-theme.css">
+<link rel="stylesheet" href="/assets/css/style.css"> <!--Back up incase default doesnt work-->
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<head>
+  <title>v3</title>
+  <meta name="description" content="With 260+ gαmes, it's quite tempting. Isn't it, saint? ">
+  <meta name="keywords" content="Hell, hell, d3ch, math, education, algebra">
+  <!--
         skid or person looking at my code, dont mind those
       
         if ur a skid (or worse. costco) then js stop.
       -->
-      </head>
+</head>
+
 <body>
-  <html>
-<body>
-  <center>
-    <br>
-    <br>
-      <br>
-        <br>
-    <div id="space"></div>            
-    <div id="content-container">
+  <!-- Uses a transparent header that draws on top of the layout's background -->
+  <style>
+    .demo-layout-transparent {
+      background: url('./assets/images/watermelon.png') center / cover;
+    }
 
-     <h3>Hell | v3</h3>
-      <button onclick="abt()" class="block" type="button">Suggest</button>
-      <p id = "subtitle"></p>
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+      color: white;
+    }
+  </style>
 
-        <br>
-        <br>
-        <br>
-      
-</div>
-
-</center>
-<nav class="navbar">
-  <div class="container">
-    <h1 id = "white" class="logo"><a href="/index">v3</a></h1>
-      <ul class="nav-links">
-          <li><a href="/r/a.html">Apps</a></li>
-          <li><a href="/r/p.html">Search</a></li>
-          <li><a href="/r/g.html">Gxmes</a></li>
-          <li><a href="/r/b.html">Ch3ats</a></li>
-      </ul>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Title</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/r/a.html">Apps</a>
+          <a class="mdl-navigation__link" href="/r/p.html">Search</a>
+          <a class="mdl-navigation__link" href="/r/g.html">Gxmes</a>
+          <a class="mdl-navigation__link" href="/r/b.html">Ch3ats</a>
+        </nav>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <center>
+        <h1>WatermelonProxy</h1>
+        <p>
+          All of the latest apps and games to the finest! <br>
+          Made by CL. <a href="https://combiete-lantey.flutterflow.com">Website</a>
+        </p>
+      </center>
+    </main>
   </div>
-  </nav>
+  <script src="/assets/js/cloaker.js"></script> <!-- hides the tab -->
+  <script src="/assets/js/subt.js"></script>
+  <script src="/assets/js/s.js"></script><!--Randomly generate stars-->
+  <script src="/assets/js/c.js"></script>
+</body>
 
-      <!-- Nav Bar html / end of webpage html-->
-     <center>   
-  <br>
-  <div class="footer">
-    <p>&copy;</p><a href="https://github.com/d3ch" target ="_blank">Github </a>
-    <a href="index.html" title="website view counter"><img src="https://counter10.optistats.ovh/private/freecounterstat.php?c=e3wfecyfabwnnfmyfx93ym25x9gx1xmn" border="0" title="website view counter" alt="website view counter"></a>
-  </div>
-  <script>
-    function abt() {
-        var win = window.open(); var f = win.document.createElement("iframe");  window.focus(); var url = "https://forms.gle/uE357bpzg3AnWL1W6"; if (!url) return; f.style.width = "100%"; f.style.height = "100%"; win.document.body.appendChild(f); f.src=url; win.document.body.style.margin = '0'; f.style.border = 'none'; f.style.margin = '0'; win.document.body.style.height = '100vh'
-        }
-    </script>
-   </center>
-   <script src="/assets/js/cloaker.js"></script> <!-- hides the tab -->
-   <script src="/assets/js/subt.js"></script>
-   <script src="/assets/js/s.js"></script><!--Randomly generate stars-->
-   <script src = "/assets/js/c.js"></script>
-  </body>
 </html>
-
-  
