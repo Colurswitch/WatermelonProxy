@@ -141,7 +141,7 @@ const gameData = [
     { id: 0, title: "Mandalin Stutn Cars 3", link: "/games/mandalin-stunt-cars-3/" },
     { id: 0, title: "Minecraft", link: "/games/minecraft-18/" },
     { id: 1, title: "Want Minecraft Singleplayer? Browse up to Eaglercraft.", link: "/games/minecraft-18/" },
-    
+
 
     { id: 0, title: "Moto x3m", link: "/games/motox3m/" },
     { id: 0, title: "Moto x3m | 2", link: "/games/motox3m2/" },
@@ -317,7 +317,7 @@ const gameData = [
     { id: 0, title: "Madness | Project Nexus", link: "/games/flash/?swf=mgnex.swf" },
 
     { id: 0, title: "Mario Kart but Flash", link: "/games/flash/?swf=mariokartflash.swf" },
-    
+
     { id: 0, title: "Rogue Souls", link: "/games/flash/?swf=rg.swf" },
     { id: 0, title: "Rogue Souls 2", link: "/games/flash/?swf=rgs2.swf" },
     { id: 0, title: "Papas Freezeria", link: "/games/flash/?swf=papas%20freezeria.swf" },
@@ -345,16 +345,25 @@ function generateGameCards() {
     const container = document.getElementById("gameCardsContainer");
 
     gameData.forEach((game) => {
-        const card = document.createElement("div");
-        card.className = "game-card";
-        card.setAttribute("data-id", game.id); //data-id attribute thin
+        var card = document.createElement("div");
+        card.classList.add("demo-card-event", "mdl-card mdl-shadow--2dp");
+        card.onclick = `launchURL('${game.link}')`;
+        card.setAttribute("data-id",game.id);
         card.innerHTML = `
-            <h1 class="game-title">${game.title}</h1>
-            <a href="${game.link}" class="play-button ${game.id === 1 ? 'hide-button' : ''}">Play Now</a>
+        <div class="demo-card-event mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+            <h4>
+            ${game.title}
+            </h4>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">apps</i>
+        </div>
         `;
         container.appendChild(card);
     });
-    
+
 }
 
 generateGameCards();

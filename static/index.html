@@ -1,8 +1,15 @@
-<link rel="stylesheet" href = "/assets/css/search.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-red.min.css" />
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <div id="content">
-   <form id="uv-form"">
+  <p>Search is broken for now</p>
+   <form id="uv-form">
       <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
-      <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+      <!-- <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/> -->
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="uv-address">
+        <label class="mdl-textfield__label" for="uv-address">Search or type a URL</label>
+      </div>
     </form>
     <div class="desc left-margin">
       <p id="uv-error"></p>
@@ -10,15 +17,6 @@
     </div>
     <br>
 </div>
-<center>
-  <h2 id = "white">Search is broken for now.</h2>
-</center>
-<style>
-  #white{
-    color:white;
-    align-self:center;
-  }
-</style>
 <script src="uv/uv.bundle.js" defer></script>
 <script src="uv/uv.config.js" defer></script>
 <script src="register-sw.js" defer></script>
